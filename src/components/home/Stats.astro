@@ -1,0 +1,30 @@
+---
+// Stats component - Responsive grid: 3 cols desktop, 2 cols tablet, 1 col mobile
+interface StatItem {
+  value: string;
+  label: string;
+}
+
+const stats: StatItem[] = [
+  { value: '5 min', label: 'Time to Root Cause' },
+  { value: '92%', label: 'Actionable Findings' },
+  { value: '200,000+', label: 'Production-Grade Investigations' },
+];
+---
+
+<section class="py-8 md:py-12 mt-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+      {stats.map((stat, index) => (
+        <div class={`text-center ${index === 2 ? 'md:col-span-2 lg:col-span-1' : ''}`}>
+          <div class="text-3xl md:text-4xl lg:text-5xl font-cleric-sans text-black font-bold mb-2">
+            {stat.value}
+          </div>
+          <div class="text-gray-500 text-xs md:text-sm font-cleric-sans">
+            {stat.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

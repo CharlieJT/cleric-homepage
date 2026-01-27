@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/* ========================================
+   Custom Font Definitions
+   ======================================== */
+
+/* Cleric Sans - Primary brand font */
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-300.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-300Italic.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-400.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-400Italic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-500.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-500Italic.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-600.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cleric Sans";
+  src: url("../fonts/ClericSans/Cleric Sans woff2/Cleric-Sans-Text-600Italic.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* GT Alpina - Display/Heading font */
+@font-face {
+  font-family: "GT Alpina";
+  src: url("../fonts/GT Alpina/GT-Alpina-Standard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Alpina";
+  src: url("../fonts/GT Alpina/GT-Alpina-Standard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Alpina";
+  src: url("../fonts/GT Alpina/GT-Alpina-Standard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* GT America Mono - Monospace font */
+@font-face {
+  font-family: "GT America Mono";
+  src: url("../fonts/GT America/GT-America-Mono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========================================
+   Tailwind Theme Extensions
+   ======================================== */
+
+@theme {
+  /* Font families */
+  --font-cleric-sans: "Cleric Sans", system-ui, sans-serif;
+  --font-gt-alpina: "GT Alpina", Georgia, serif;
+  --font-gt-america-mono: "GT America Mono", monospace;
+
+  /* Brand colors */
+  --color-navy: #1a2b5a;
+  --color-navy-light: #2a3d6e;
+  --color-light-blue: #e8f0f8;
+  --color-light-gray: #f5f7fa;
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+
+body {
+  font-family: var(--font-cleric-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
