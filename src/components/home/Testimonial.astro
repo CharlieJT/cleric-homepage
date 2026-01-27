@@ -1,0 +1,92 @@
+---
+// Testimonial component - BlaBlaCar quote card with Maxime's photo
+import maximeImage from '../../assets/maxime-image.png';
+---
+
+<section class="py-8 md:py-12 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-light-gray rounded-2xl overflow-hidden border border-gray-200 mx-10">
+      <!-- Desktop Layout -->
+      <div class="hidden lg:flex">
+        <!-- Avatar - flush to border, bigger, more cropped -->
+        <div class="flex-shrink-0 h-[24rem] lg:h-[31rem] overflow-hidden">
+          <img 
+            src={maximeImage.src} 
+            alt="Maxime Fouilleul" 
+            class="w-80 lg:w-[21rem] h-auto min-h-full object-cover object-[center_-4rem] scale-150 origin-top"
+          />
+        </div>
+        
+        <!-- Quote Content - less padding, wider -->
+        <div class="flex-1 p-8 lg:p-10 flex flex-col justify-between">
+          <!-- Quote -->
+          <blockquote class="text-3xl lg:text-[1.8rem] text-black leading-relaxed mb-6">
+           “I see Cleric functioning as an SRE companion for our Software Engineers. If one team has already solved an alert, we can apply that knowledge elsewhere.”
+
+          </blockquote>
+          
+          <!-- Bottom row: Company/Author on left, CTA on right -->
+          <div class="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <!-- Company - bigger, correct font -->
+              <div class="text-2xl lg:text-3xl font-cleric-sans font-semibold mb-3">
+                BlaBlaCar
+              </div>
+              
+              <!-- Author Info -->
+              <div class="text-gray-600 text-md lg:text-lg">
+                <span class="font-semibold text-black block">Maxime Fouilleul</span>
+                <span class="block">Head of Infrastructure & Operations | BlaBlaCar</span>
+              </div>
+            </div>
+            
+            <a 
+              href="#" 
+              class="inline-flex items-center justify-center bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap flex-shrink-0"
+            >
+              Read case study
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Layout -->
+      <div class="lg:hidden">
+        <!-- Company -->
+        <div class="p-6 pb-0">
+          <div class="text-3xl font-cleric-sans mb-10">
+            BlaBlaCar
+          </div>
+          
+          <!-- Quote -->
+          <blockquote class="text-3xl text-black leading-[2.5rem] mb-6">
+          "I see Cleric functioning as an SRE companion for our Software Engineers. If one team has already solved an alert, we can apply that knowledge elsewhere."
+          </blockquote>
+        </div>
+        
+        <!-- Author row with image -->
+        <div class="flex items-center justify-between item-center gap-4 px-6 pb-4">
+        <div class="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+            <img 
+            src={maximeImage.src} 
+            alt="Maxime Fouilleul" 
+            class="w-full h-auto min-h-full object-cover scale-155"
+            />
+        </div>
+          <div class="text-gray-600 text-xl lg:text-base">
+            <span class="font-semibold text-black block">Maxime Fouilleul</span>
+            <span class="block">Head of Infrastructure & Operations | BlaBlaCar</span>
+          </div>
+          
+        </div>
+        
+      </div>
+       <a 
+       href="#" 
+       class="lg:hidden mb-6 mx-6 inline-flex items-center justify-center bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap flex-shrink-0"
+    >
+       Read case study
+    </a>
+    </div>
+  </div>
+</section>
